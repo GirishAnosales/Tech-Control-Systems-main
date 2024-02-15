@@ -1,0 +1,23 @@
+<div class="container-fluid home">
+    <div class="row r1">
+        <h3 class="h3">Services & Solutions</h3>
+        <div class="col-sm-12 r1c1">
+            <mat-grid-list class="mat-grid-list" [cols]="cols" rowHeight="312px">
+                <mat-grid-tile class="mat-grid-tile" *ngFor="let service of services">
+                    <mat-card class="mat-card">
+                        <mat-card-header class="mat-card-header">
+                            <mat-card-title class="mat-card-title">{{service.title}}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image class="mat-card-image" [src]="service.image" alt="Service">
+                        <mat-card-actions class="mat-card-actions">
+                            <button mat-icon-button class="mat-icon-button" color="accent" (click)="scrollToTop()"
+                                [routerLink]="service.routerLink">
+                                <mat-icon>chevron_right</mat-icon>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>

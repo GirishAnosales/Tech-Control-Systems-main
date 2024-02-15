@@ -1,0 +1,121 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-width:960px) {
+    .footer {
+        background-color: $color-dark;
+        position: relative;
+        z-index: 1;
+        color: $color-white;
+
+        .r1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .c1,
+            .c2,
+            .c3,
+            .c4,
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 8rem;
+                padding-bottom: 8rem;
+
+                .h5 {
+                    font-weight: bold;
+                }
+
+                .h6 {
+                    margin: 0;
+                    padding: 1rem 0;
+                    color: $color-secondary;
+                }
+
+                .a {
+                    margin-left: 1rem;
+                    text-decoration: none;
+
+                    .h6 {
+                        font-size: small;
+                        font-weight: 300;
+                        transition: .2s;
+                        letter-spacing: .5px;
+                        color: $dark-gray;
+                    }
+
+                    .h6:hover {
+                        font-weight: bold;
+                        transition: .3s;
+                        color: $color-white;
+                    }
+                }
+            }
+
+            .logo {
+                .links {
+                    padding: 1rem;
+                    background-color: $white;
+                    border-radius: 1rem;
+
+                    .img {
+                        width: 200px;
+                    }
+                }
+            }
+
+            .c4 {
+                .social-media-icons {
+                    margin-bottom: 1rem;
+                    margin-top: 2rem;
+
+                    .social-media-links {
+                        padding: 1rem;
+
+                        .bi {
+                            color: $dark-gray;
+                            transition: .3s;
+                            font-size: 20px;
+                        }
+
+                        .bi:hover {
+                            color: $color-primary;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .r2 {
+            padding: 1rem 0;
+            text-align: center;
+
+            .c1 {
+                .h6 {
+                    margin: 0;
+                    font-size: small;
+                    padding-bottom: 2rem;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .footer {
+        .r1 {
+
+            .c1,
+            .c2,
+            .c3 {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

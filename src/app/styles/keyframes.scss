@@ -1,0 +1,91 @@
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        right: 5%;
+    }
+
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-in-bottom-to-top {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-bottom-to-top {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top-to-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-left-to-right {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes counter {
+    from {
+        --num-one: 0;
+        --num-two: 0;
+        --num-three: 0;
+        --num-four: 0;
+    }
+
+    to {
+        --num-one: var(--count-to);
+        --num-two: var(--count-to);
+        --num-three: var(--count-to);
+        --num-four: var(--count-to);
+    }
+}

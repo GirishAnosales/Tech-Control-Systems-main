@@ -1,0 +1,180 @@
+@import '../../styles/theme.scss';
+
+.snackbar-padding {
+    padding-top: 16px;
+}
+
+@media screen and (min-width: 0px) {
+    .contact {
+        height: 100%;
+
+        .r1 {
+            height: 720px;
+            background-image: url('../../../assets/images/adobe/25.png');
+            background-position: center;
+
+            .r1c1 {
+                backdrop-filter: blur(4px);
+                box-shadow: 0px 0px 4px 0px #00000020;
+                position: absolute;
+                top: 20rem;
+                text-align: center;
+                padding: 1rem;
+
+                .h1 {
+                    text-shadow: 3px 3px #022D4640;
+                    font-weight: bold;
+                }
+
+                .p {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .r2 {
+            background-color: $color-white;
+            height: 720px;
+
+            .r2c2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding: 1rem;
+
+                .careers-title {
+                    padding: 1rem;
+
+                    .h4 {
+                        color: $color-primary;
+                    }
+
+                    .p {
+                        color: $color-secondary;
+                    }
+                }
+
+                .contact-info {
+                    padding: 1rem;
+                    background-color: #0F4C7510;
+                    border-radius: 1rem;
+
+                    .h4 {
+                        color: $color-primary;
+                    }
+
+                    .p {
+                        color: $color-secondary;
+                    }
+                }
+            }
+
+            .r2c1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 1rem;
+
+                .form {
+                    background-color: $color-white;
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    font-family: MavenPro;
+                    border-top: 2px solid $color-secondary;
+                    border-left: 2px solid $color-secondary;
+                    border-bottom: 4px solid $color-secondary;
+                    border-right: 4px solid $color-secondary;
+
+                    .h1,
+                    .h2,
+                    .h3,
+                    .h4,
+                    .h5 {
+                        margin: 0%;
+                        padding: 1rem;
+                    }
+
+                    .mat-form-field {
+                        width: 100%;
+
+                        .mat-text-field {
+                            background-color: #fff;
+                        }
+
+                        .mat-label {
+                            font-size: small;
+                        }
+                    }
+
+                    .title-logo {
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 1rem;
+
+                        .img-people {
+                            height: 32px;
+                            width: 32px;
+                        }
+
+                        .h4 {
+                            margin: 0;
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contact {
+        .r2 {
+            background-size: 100%;
+
+            .r2c1 {
+                padding: 2rem 0;
+
+                .form {
+                    padding: 2rem;
+
+                    .mat-form-field {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact {
+        .r1 {
+            background-size: 100% 100%;
+
+            .r1c1 {
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                top: 16rem;
+                width: 40%;
+                text-align: end;
+                backdrop-filter: blur(0px);
+                box-shadow: none;
+
+                .h1 {
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .r2 {
+            .r2c1 {
+                .form {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+}

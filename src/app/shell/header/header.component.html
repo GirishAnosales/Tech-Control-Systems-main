@@ -1,0 +1,107 @@
+<div class="container-fluid header">
+    <div class="row r">
+        <div class="col-sm-6 c1">
+            <div class="logo" *ngIf="(isMediumLargeXLarge | async)">
+                <a class="a" (click)="scrollToTop()">
+                    <div class="links">
+                        <img class="img" src="../../../assets/images/logo/PastedGraphic-1.png" alt="Logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 c2">
+            <ng-container class="ng-container" *ngIf="(isMediumLargeXLarge | async)">
+                <button routerLink="home" (click)="scrollToTop()" class="button hvr-overline-from-left"
+                    style="color: #0F4C75; font-family: MavenPro;" mat-button>HOME</button>
+                <button [matMenuTriggerFor]="servicesMenu" class="button" style="color: #0F4C75; font-family: MavenPro;"
+                    mat-button>SERVICES</button>
+                <mat-menu class="mat-menu" #ServicesButton #servicesMenu="matMenu" style="width:100%;">
+                    <div class="mat-menu-content" style="padding: 0px;">
+                        <button routerLink="services/active-harmonic-filters" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">Active Harmonic Filters
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/building-management-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Building Management
+                                Systems (BMS)</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/emergency-lighting-solutions" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Emergency Lighting
+                                Solutions</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/entrance-automation-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">Entrance Automation
+                                Systems</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/fire-alarms-systems" (click)="scrollToTop()" class="mat-menu-item"
+                            style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">Fire Alarms Systems</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/fire-hydrant-systems" (click)="scrollToTop()" class="mat-menu-item"
+                            style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Fire Hydrant Systems
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/gas-suppression-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Gas Suppression Systems
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/home-automation-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Home Automation Systems
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/indoor-outdoor-lighting-control-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Indoor & Outdoor
+                                Lighting Control Systems</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/ip-cctv-systems" (click)="scrollToTop()" class="mat-menu-item"
+                            style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">IP CCTV Systems
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/modular-fire-extinguishers" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0; ">Modular Fire
+                                Extinguishers</h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/networking-systems" (click)="scrollToTop()" class="mat-menu-item"
+                            style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">Networking Systems
+                            </h6>
+                        </button>
+                        <mat-divider class="mat-divider" style="border-top: 1px solid #022D4620;"></mat-divider>
+                        <button routerLink="services/public-address-systems" (click)="scrollToTop()"
+                            class="mat-menu-item" style="font-family: MavenPro;" mat-menu-item>
+                            <h6 class="h6" style="font-size: small; color: #0F4C75; margin: 0;">Public Address
+                                Systems</h6>
+                        </button>
+                    </div>
+                </mat-menu>
+                <button routerLink="careers" (click)="scrollToTop()" class="button"
+                    style="color: #0F4C75; font-family: MavenPro;" mat-button>CAREERS</button>
+                <button routerLink="about" (click)="scrollToTop()" class="button"
+                    style="color: #0F4C75; font-family: MavenPro;" mat-button>ABOUT</button>
+                <button routerLink="contact" (click)="scrollToTop()" class="button"
+                    style="color: #0F4C75; font-family: MavenPro;" mat-button>CONTACT</button>
+            </ng-container>
+        </div>
+    </div>
+</div>

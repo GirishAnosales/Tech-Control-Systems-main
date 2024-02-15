@@ -1,0 +1,52 @@
+@import '../../../../styles/theme.scss';
+
+@media screen and (min-width: 0px) {
+    .partners {
+        padding: 0%;
+        color: $color-white;
+
+        .r1 {
+            background-color: $color-black;
+            border-top: 1px solid $dark-gray;
+            border-bottom: 1px solid $dark-gray;
+
+            .partners-title {
+                width: 100%;
+
+                .h3 {
+                    text-align: center;
+                    padding: 1rem;
+                    padding-top: 3rem;
+                    margin: 0%;
+                }
+            }
+
+            .r1c1 {
+                padding: 4rem;
+
+                .r {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+
+                    .c {
+                        width: auto;
+                        padding: 1rem;
+
+                        .p {
+                            padding: 1rem 0;
+                        }
+                    }
+                }
+
+                .img {
+                    height: 200px;
+                    width: 200px;
+                    margin: auto;
+                    border-radius: 1rem;
+                }
+            }
+        }
+
+    }
+}

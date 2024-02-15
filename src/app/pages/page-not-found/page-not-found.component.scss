@@ -1,0 +1,31 @@
+@import '../../styles/theme.scss';
+
+.home {
+    background-color: $color-white;
+    height: 720px;
+    color: $color-primary;
+    text-align: center;
+
+    .r1 {
+        .r1c1 {
+            .r1c1r1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10rem;
+
+                .r1c1r1c1 {
+                    .mat-card {
+                        border-radius: 1rem;
+                        border: 8px solid $color-secondary;
+                    }
+
+                    .mat-card-actions {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

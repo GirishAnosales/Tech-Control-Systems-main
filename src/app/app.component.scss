@@ -1,0 +1,21 @@
+.app {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+
+    .r {
+        padding: 0%;
+
+        .c {
+            padding: 0%;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) {
+    img {
+        height: 745px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,121 @@
+<div class="container-fluid careers">
+    <div class="row r1">
+        <div class="col-sm-12 r1c1">
+            <div class="row r1c1r1">
+                <h1 class="h1">Careers</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row r2">
+        <div class="careers-title">
+            <h4 class="h4" data-aos="fade-right">Job Applications</h4>
+            <p class="p">Experience a culture of collaboration and innovation that inspires excellence</p>
+        </div>
+        <div class="col-sm-12 r2c1">
+
+            <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+                <div class="mat-dialog-content" mat-dialog-content>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">First Name</mat-label>
+                                <input name="First Name" type="text" class="input" formControlName="firstName" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Last Name</mat-label>
+                                <input name="Last Name" type="text" class="input" formControlName="lastName" matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Email</mat-label>
+                                <input name="Email" type="email" class="input" formControlName="email" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Mobile</mat-label>
+                                <input name="Mobile" type="tel" class="input" formControlName="mobile" matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">LinkedIn Profile
+                                    URL</mat-label>
+                                <input name="LinkedIn Profile URL" type="url" class="input"
+                                    formControlName="linkedInUrl" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Website/Portfolio
+                                    URL</mat-label>
+                                <input name="Website/Portfolio URL" type="url" class="input"
+                                    formControlName="portfolioUrl" matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Position Applied For
+                                </mat-label>
+                                <input name="Position" type="text" class="input" formControlName="position" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Expected Salary</mat-label>
+                                <input name="Expected Salary" type="number" class="input"
+                                    formControlName="expectedSalary" matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Years of Relevant Experience
+                                </mat-label>
+                                <input name="Revelant Experience" type="text" class="input"
+                                    formControlName="revelentExperience" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">College Stream</mat-label>
+                                <input name="College Stream" type="text" class="input" formControlName="collegeStream"
+                                    matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Graduation
+                                    Degree</mat-label>
+                                <input name="Graduation Degree" type="text" class="input"
+                                    formControlName="graduationDegree" matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-sm-6">
+                            <mat-form-field class="mat-form-field">
+                                <mat-label class="mat-label" style="font-family: MavenPro;">Graduation Year</mat-label>
+                                <input name="Graduation Year" type="number" class="input"
+                                    formControlName="graduationYear" matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <button class="form-button" style="font-family: MavenPro; font-weight: bold;" mat-raised-button
+                        type="submit" [disabled]="form.invalid">Send</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

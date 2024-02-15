@@ -1,0 +1,104 @@
+<div class="container-fluid sidenav" *ngIf="isSmall | async">
+    <div class="row r">
+        <div class="col-sm-12 c">
+            <mat-sidenav-container class="sidenav-container">
+                <mat-sidenav #drawer class="mat-sidenav" fixedInViewport
+                    [attr.role]="(isSmall | async) ? 'dialog' : 'navigation'" mode="over">
+                    <mat-nav-list class="mat-nav-list">
+                        <div class="close-button">
+                            <button class="button" type="button" aria-label="Toggle sidenav" mat-icon-button
+                                (click)="drawer.close()">
+                                <mat-icon class="icon" aria-label="Side nav toggle icon">close</mat-icon>
+                            </button>
+                        </div>
+                        <div class="label">
+                            <h6 class="h6">Pages</h6>
+                        </div>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="home">
+                            <h6 class="h6">Home</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="careers">
+                            <h6 class="h6">Careers</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="about">
+                            <h6 class="h6">About</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="contact">
+                            <h6 class="h6">Contact</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <div class="label">
+                            <h6 class="h6">Solutions & Services</h6>
+                        </div>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/active-harmonic-filters">
+                            <h6 class="h6">Active Harmonic Filters</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/building-management-systems">
+                            <h6 class="h6">Building Management Systems (BMS)</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()"
+                            href="services/emergency-lighting-solutions">
+                            <h6 class="h6">Emergency Lighting Solutions</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/entrance-automation-systems">
+                            <h6 class="h6">Entrance Automation Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/fire-alarms-systems">
+                            <h6 class="h6">Fire Alarms Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/fire-hydrant-systems">
+                            <h6 class="h6">Fire Hydrant Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/gas-suppression-systems">
+                            <h6 class="h6">Gas Suppression Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/home-automation-systems">
+                            <h6 class="h6">Home Automation Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()"
+                            href="services/indoor-outdoor-lighting-control-systems">
+                            <h6 class="h6">Indoor & Outdoor Lighting Control Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/ip-cctv-systems">
+                            <h6 class="h6">IP CCTV Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/modular-fire-extinguishers">
+                            <h6 class="h6">Modular Fire Extinguishers</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/networking-systems">
+                            <h6 class="h6">Networking Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                        <a class="a" mat-list-item (click)="drawer.close()" href="services/public-address-systems">
+                            <h6 class="h6">Public Address Systems</h6>
+                        </a>
+                        <mat-divider class="mat-divider"></mat-divider>
+                    </mat-nav-list>
+                </mat-sidenav>
+                <mat-sidenav-content class="mat-sidenav-content">
+                    <mat-toolbar class="mat-toolbar">
+                        <h1 class="h1">Tech Control Systems</h1>
+                        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+                            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+                        </button>
+                    </mat-toolbar>
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+        </div>
+    </div>
+</div>

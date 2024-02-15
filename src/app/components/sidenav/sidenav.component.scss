@@ -1,0 +1,76 @@
+@import '../../styles/theme.scss';
+
+@media screen and (min-height: 0px) {
+    .sidenav {
+        position: sticky;
+        top: 0;
+        z-index: 1999;
+
+        .r {
+            .c {
+                padding: 0%;
+
+                .sidenav-container {
+                    height: 100%;
+
+                    .mat-sidenav-content {
+                        .mat-toolbar {
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: $color-white;
+
+                            .h1 {
+                                font-family: MavenPro;
+                                font-size: large;
+                            }
+                        }
+                    }
+                }
+
+                .mat-sidenav {
+                    width: 100%;
+                    background-color: $color-white;
+                }
+
+                .mat-nav-list .mat-divider {
+                    border-top-color: #022D4620;
+                }
+
+                .mat-nav-list .close-button {
+                    display: flex;
+                    align-content: flex-end;
+                    justify-content: flex-end;
+                    align-self: flex-end;
+                }
+
+                .mat-nav-list .a {
+                    color: $color-primary;
+
+                    .h6 {
+                        font-size: small;
+                        font-family: MavenPro;
+                        margin: 0;
+                        text-indent: 1rem;
+                    }
+                }
+
+                .mat-nav-list .a:hover {
+                    background-color: $light-gray;
+                    color: $color-white;
+                }
+
+                .mat-nav-list .label {
+                    background-color: $color-dark;
+                    color: $color-light;
+
+                    .h6 {
+                        font-size: 11px;
+                        margin: 0%;
+                        text-align: end;
+                        padding: 0.1rem 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
